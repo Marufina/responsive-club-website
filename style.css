@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Athiti', sans-serif;
+    font-size: 1.6rem;
+
+}
+
+.nav-container {
+    display: block;
+    justify-content: space-between;
+    background-color: black;
+    max-width: 99vw;
+}
+
+.nav-logo {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav-logo #logo {
+    width: 11rem;
+    padding: .1rem .7rem;
+}
+
+.nav-logo #logo-letters {
+    font-family: 'Six Caps', sans-serif;
+    font-weight: 400;
+    font-size: 7rem;
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+    align-self: center;
+    padding-left: 1rem;
+}
+
+.nav-menu {
+    background-color: #fe2e47;
+    padding: 1rem 1.5rem;
+}
+
+.nav-menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+@media only screen and (max-width: 300px) {
+    .nav-logo #logo {
+        width: 7rem;
+    }
+    
+    .nav-logo #logo-letters {
+        font-size: 2rem;
+    }
+
+    .nav-menu a {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 480px) {
+    .nav-logo #logo {
+        width: 9rem;
+    }
+    
+    .nav-logo #logo-letters {
+        font-size: 4.5rem;
+    }
+
+    .nav-menu a {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 760px) {
+    .nav-logo #logo {
+        width: 10rem;
+    }
+    
+    .nav-logo #logo-letters {
+        font-size: 5rem;
+    }
+
+    .nav-menu a {
+        font-size: 2rem;
+        
+    }
+}
+
+.container {
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: repeat(6, 16.6%);
+    grid-template-rows: 3fr 1fr .4fr;
+    
+
+}
+
+.main {
+    grid-area: 1 / 1 / 2 / span 3;
+    max-width: 100%;
+    padding-left: 2vw;
+    padding-top: 3vh;
+    padding-right: 2vw;
+    align-self: baseline;
+    
+}
+
+.main h3 {
+    font-size: 2.8vw;
+    text-align: center;
+}
+
+.main h1 {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.main h4 {
+    font-size: 2.2vw;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+}
+
+.main p {
+    font-size: 1.6vw;
+    text-align: justify;
+}
+
+.main span {
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.main button {
+    width: 90%;
+    text-align: center;
+    background-color: #fe2e47;
+    border-radius: .5rem;
+    height: 6vh;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 2.2vw;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main button:hover {
+    background-color: #a10303;
+    font-size: 2.5vw;
+
+}
+
+.aside {
+    grid-area: 1 / 4 / 2 / span 3;
+    max-height: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.aside img {
+    width: 100%;
+    border: 2vw solid yellow;    
+}
+
+.quote {
+    grid-area: 2 / 1 / span 1 / span 6;
+    width:  99vw;
+    height: auto;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    background-color: black;
+    color: white;
+    padding: 2vw 10vw;
+}
+
+.quote h2 {
+    font-size: 2vw;
+}
+
+.quote h5 {
+    font-size: 1.5vw;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.title {
+    grid-area: 3 / 1 / span 1 / span 6;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    background-color: #fe2e47;
+    width: 99vw;
+    color: white;
+}
+
+.title h2 {
+    font-size: 3vw;
+}
+
+
+.continents {
+    display: flex;
+    margin-top: 2vh;
+    width: 98vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.continents .region {
+    width: 15vw;
+    padding-bottom: 2vh;
+}
+
+.continents img {
+    width: 11vw;
+    
+}
+
+.continents p {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+footer {
+    height: 30vh;
+    background-image: url(broomsticks.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+footer h4 {
+    color: white;
+    padding: 2vh;
+    font-size: 2vw;
+}
+
+footer a {
+    color: white;
+
+}
